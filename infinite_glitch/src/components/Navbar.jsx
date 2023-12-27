@@ -60,7 +60,7 @@ function Navbar() {
 
           {/* Menu on small screen*/}
         <div tabIndex={0}  style={{ outline: 'none' }} onClick={() => setNav(!nav)} className="md:hidden cursor-pointer pr-4 z-10 text-infiniteBlack">
-          {nav ? <FaTimes size={35} style={{ outline: 'none' }}/> : <FaBars size={35} style={{ outline: 'none' }}/>}
+          {nav ? <FaTimes size={35} style={{ outline: 'none' }} /> : <FaBars size={35} style={{ outline: 'none' }}/>}
         </div>
 
         {nav && (

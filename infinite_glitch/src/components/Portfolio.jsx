@@ -8,15 +8,15 @@ function Portfolio() {
       Image_src: infinite_glitch,
       title: "Infinite Glitch",
       description: "Welcome to my digital realm! This portfolio is not just a collection of code; it's a journey through the landscapes of my backend development prowess. Crafted with React and styled with Tailwind CSS, this static and responsive website showcases and encapsulates the essence of who I am as a backend developer.",
-      technologies: ["React", "JavaScript", "Tailwind", "Github", "Vercel"],
-      Livelink: "portfolio-infinite-glitch.vercel.app",
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Github", "Vercel"],
+      Livelink: "localhost",
       GithubLink: "https://github.com/horlami228/Portfolio-infinite-glitch"
     }
 
   ]
   
   return (
-    <div name="portfolio" className="bg-white w-full mt-24">
+    <div name="portfolio" className="bg-white w-full mt-10">
       <div className="mx-auto p-10 w-full max-w-screen-lg flex flex-col justify-center h-full">
         <div className='mb-10'>
           <p className="text-4xl inline border-b-4 border-b-gray-600 font-bold">Portfolio</p>
@@ -38,7 +38,7 @@ function Portfolio() {
 
                 <div className="flex justify-center ">
                   <a href={Livelink} target='_blank' rel='noreferrer'>
-                  <button className=" w-24 px-3 py-2 mr-20 mb-4 text-1xl hover:text-gray-500 text-white
+                  <button className=" w-24 px-3 py-2 mr-10 mb-4 text-1xl hover:text-gray-500 text-white
                   rounded-md bg-gradient-to-r from-infiniteBlue to-infiniteBlack">Live</button>
                   </a>
                   
@@ -50,15 +50,15 @@ function Portfolio() {
 
               </div>  
 
-                  <div className="p-4 justify-start text-left flex flex-col">
+                <div className="p-2 text-left flex flex-col mt-5">
                     <p className='text-4xl font-bold mb-4'>{title}</p>
                     <p className="mb-4">
                     {description}
-                  </p>
+                    </p>
                   <div>
                     <p className="text-2xl font-semibold"> Technologies used: </p>
                    
-                    <ul className="flex">
+                    <ul className="flex  flex-wrap">
                       {technologies.map(function (element, index) {
                         return <li className='px-1' key={index}> {`${element}${index < technologies.length - 1 ? ',' : ''}`} </li>
                       })}
