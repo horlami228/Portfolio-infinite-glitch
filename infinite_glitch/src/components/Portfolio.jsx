@@ -8,9 +8,9 @@ function Portfolio() {
       Image_src: infinite_glitch,
       title: "Infinite Glitch",
       description: "Welcome to my digital realm! This portfolio is not just a collection of code; it's a journey through the landscapes of my backend development prowess. Crafted with React and styled with Tailwind CSS, this static and responsive website showcases and encapsulates the essence of who I am as a backend developer.",
-      technologies: ["React", "JavaScript"],
-      Livelink: "localhost",
-      GithubLink: "https://github.com/horlami228/infinite-glitch"
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Github", "Vercel"],
+      Livelink: "portfolio-infinite-glitch.vercel.app",
+      GithubLink: "https://github.com/horlami228/Portfolio-infinite-glitch"
     }
 
   ]
