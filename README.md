@@ -27,11 +27,11 @@ Thank you for visiting and considering the skills and passion embedded in every 
 ### Project Details:
 
 - **Live Link:** [Infinite Glitch](localhost)
-- **GitHub Repository:** [Infinite Glitch GitHub](https://github.com/horlami228/infinite-glitch)
+- **GitHub Repository:** [Infinite Glitch GitHub](https://github.com/horlami228/Portfolio-infinite-glitch)
 
 ### Preview:
 
-![Infinite Glitch Preview](/src/assets/images/infiniteglitch.png)
+![Infinite Glitch Preview](/infinite_glitch/src/assets/images/infiniteglitch.png)
 
 ### Technologies Used:
 
