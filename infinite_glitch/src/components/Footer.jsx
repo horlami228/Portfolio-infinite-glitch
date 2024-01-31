@@ -59,14 +59,12 @@ const SocialLink = [
         },
     ]
 
-    const FooterYear = () => {
-        const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
       
-        useEffect(() => {
-          // Update the current year when the component mounts
-          setCurrentYear(new Date().getFullYear());
-        }, []); // Empty dependency array ensures it runs only once when the component mounts
-    }
+    useEffect(() => {
+      // Update the current year when the component mounts
+      setCurrentYear(new Date().getFullYear());
+    }, []); // Empty dependency array ensures it runs only once when the component mounts
 
   return (
     <footer className="bg-gray-800 text-white text-center py-8">
