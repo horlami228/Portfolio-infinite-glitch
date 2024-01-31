@@ -1,5 +1,5 @@
 // Footer.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentSharp } from "react-icons/io5";
@@ -58,6 +58,16 @@ const SocialLink = [
             download: false
         },
     ]
+
+    const FooterYear = () => {
+        const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+      
+        useEffect(() => {
+          // Update the current year when the component mounts
+          setCurrentYear(new Date().getFullYear());
+        }, []); // Empty dependency array ensures it runs only once when the component mounts
+    }
+
   return (
     <footer className="bg-gray-800 text-white text-center py-8">
       <div className="flex justify-center space-x-6 w-full">
@@ -67,7 +77,7 @@ const SocialLink = [
         ))}
       </div>
 
-      <p className="mt-4">&copy; 2023 Akintola Olamilekan. All Rights Reserved. Designed by Akintola Olamilekan</p>
+      <p className="mt-4">&copy; {currentYear} Akintola Olamilekan. All Rights Reserved. Designed by Akintola Olamilekan</p>
     </footer>
   );
 }
