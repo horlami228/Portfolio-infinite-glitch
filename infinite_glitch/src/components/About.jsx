@@ -1,57 +1,50 @@
-import React from 'react'
+import React from 'react';
+import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 function About() {
   return (
-    <div name="about" className=" w-full bg-white mt-24">
-        <div className=" flex flex-col 
-        justify-center mx-auto max-w-screen-lg p-10 w-full h-full">
+    <div name="about" className="w-full bg-white mt-24">
+        <div className="flex flex-col justify-center mx-auto max-w-screen-lg p-5 md:p-10 w-full h-full">
             <div className="mb-5">
-                <p className='text-4xl font-bold inline border-b-4 border-gray-600'>
+                <p className='text-3xl md:text-4xl font-bold inline border-b-4 border-gray-600'>
                     About
                 </p>
             </div>
 
-            <p className="text-xl mt-20">
-            Greetings! I'm Akintola Olamilekan, a backend developer deeply immersed in the world of technology. 
-            Despite my initial academic pursuit in Marketing, my curiosity led me to the realm of backend development, where I discovered my true calling.
+            <p className="text-lg md:text-xl mt-10 md:mt-20">
+                Greetings! I'm Akintola Olamilekan, a Backend Developer with a background in Marketing but a heart deeply immersed in technology. My journey began with the intricacies of C, transitioning smoothly into the vast landscapes of Python and JavaScript.
             </p>
 
-            <br />
-
-            <p className='text-xl'>
-            I embarked on my programming journey with the C language, 
-            exploring its low-level intricacies and implementing personal projects focused on data structures and algorithms. 
-            Transitioning to Python felt like a natural progression, 
-            and I'm currently expanding my horizons with JavaScript.
+            <p className='text-lg md:text-xl mt-8'>
+                With over 2+ years of experience, I specialize in crafting secure and high-performing web applications. I design efficient APIs to foster seamless frontend-backend communication and work proficiently with frameworks such as Flask, Django, and Express, as well as databases like MySQL, PostgreSQL, and MongoDB.
             </p>
 
-            <br />
-
-            <p className='text-xl'>
-            I specialize in backend development, leveraging frameworks like Flask and Django.
-             In a collaborative project, I played a pivotal role as a backend architect, overseeing the design and implementation of the database schema. MySQL served as our chosen database management system, 
-            ensuring robust relationships between tables.
+            <p className='text-lg md:text-xl mt-8'>
+                Recently, I've tackled projects involving data import and user management, achieving significant performance improvements. My role in collaborative projects often revolves around backend architecture, designing database schemas that ensure robust data integrity and optimized performance.
             </p>
 
-            <br />
-
-            <p className='text-xl'>
-            What fuels my enthusiasm is the process of architecting solutions that seamlessly power the backend of applications. 
-            I find fulfillment in optimizing for performance and scalability,
-             ensuring that technology not only works but works exceptionally well.
+            <p className='text-lg md:text-xl mt-8'>
+                I am always eager to optimize and refine solutions, aiming to enhance scalability and efficiency. My professional and proactive approach has led to noticeable reductions in system latency and improved data handling.
             </p>
 
-            <br />
-
-            <p className='text-xl'>
-            Away from the keyboard, you'll find me passionately supporting Manchester United in football and immersing myself in the intricacies of video game worlds.
-
-            Thank you for exploring my profile. Let's connect and explore how we can create meaningful solutions together!
+            <p className='text-lg md:text-xl mt-8'>
+                Away from the keyboard, I’m an avid supporter of Manchester United and relish diving into the expansive universes of video games. Thank you for exploring my profile. Let’s connect to discover how we can collaborate on exciting web projects and create meaningful solutions together!
             </p>
-            
+            <div className="flex justify-center gap-4 mt-8">
+                <a href="https://www.linkedin.com/in/akintola-olamilekan" className="text-blue-600 hover:text-blue-800" target='_blank' rel='noreferrer'>
+                    <FaLinkedinIn size={30} />
+                </a>
+                <a href="https://github.com/horlami228" className="text-gray-800 hover:text-black" target='_blank' rel='noreferrer'>
+                    <FaGithub size={30} />
+                </a>
+                <a href="https://twitter.com/lazy_codding" className="text-gray-700 hover:text-black" target='_blank' rel='noreferrer'>
+                    <FaXTwitter size={30} />
+                </a> 
+            </div>
         </div>
     </div>
   )
 }
 
-export default About
+export default About;

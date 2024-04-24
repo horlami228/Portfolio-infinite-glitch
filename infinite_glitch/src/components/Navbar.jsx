@@ -21,16 +21,21 @@ function Navbar() {
     },
     {
       id: 3,
-      item: "portfolio",
-      link: "#"
-    },
-    {
-      id: 4,
       item: "experience",
       link: "#"
     },
     {
+      id: 4,
+      item: "portfolio",
+      link: "#"
+    },
+    {
       id: 5,
+      item: "certifications",
+      link: "#"
+    },
+    {
+      id: 6,
       item: "contact",
       link: "#"
     }

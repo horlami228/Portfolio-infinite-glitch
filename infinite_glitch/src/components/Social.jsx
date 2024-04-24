@@ -57,30 +57,30 @@ export default class Social extends Component {
                     Email <MdEmail size={20} className='ml-2'/> 
                 </React.Fragment>
             ),
-            href: 'mailto:akintolaolamilekan51@gmail.com',
+            href: 'mailto:akintolaolamilekan@outlook.com',
             style: {
                 backgroundColor: "#0073e6"
             }
         },
 
-        {
-            id: 5,
-            child: (
-                <React.Fragment>
-                    Resume <IoDocumentSharp size={20} className='ml-2'/> 
-                </React.Fragment>
-            ),
-            href: '/react.jpg',
-            style: {
-                backgroundColor: "#001f3f",
-                borderBottomRightRadius: '10px'
-            },
-            download: false
-        },
+        // {
+        //     id: 5,
+        //     child: (
+        //         <React.Fragment>
+        //             Resume <IoDocumentSharp size={20} className='ml-2'/> 
+        //         </React.Fragment>
+        //     ),
+        //     href: '/react.jpg',
+        //     style: {
+        //         backgroundColor: "#001f3f",
+        //         borderBottomRightRadius: '10px'
+        //     },
+        //     download: false
+        // },
     ]
 
     return (
-      <div className="hidden xl:flex flex-col top-[25%] left-0 fixed">
+      <div className="hidden xl:flex flex-col top-[38%] left-0 fixed">
         
         <ul>
             {SocialLink.map(({id, child, href, style, download}) => (
@@ -89,7 +89,7 @@ export default class Social extends Component {
                     
                     <a href={href} className="flex justify-between items-center w-full" style={{
                         color: "white",
-                        fontSize: "12px"
+                        fontSize: "17px"
                     }} target='_blank' download={download} rel="noreferrer">
                         
                         {child}
