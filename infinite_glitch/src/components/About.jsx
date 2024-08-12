@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function About() {
   return (
-    <div name="about" className="w-full bg-white mt-24">
+    <div name="about" className="min-h-screen w-full bg-white pt-20">
         <div className="flex flex-col justify-center mx-auto max-w-screen-lg p-5 md:p-10 w-full h-full">
             <div className="mb-5">
                 <p className='text-3xl md:text-4xl font-bold inline border-b-4 border-gray-600'>
