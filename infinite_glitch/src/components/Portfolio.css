@@ -1,0 +1,183 @@
+/* Portfolio.css */
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit; /* To match the border-radius of the parent */
+}
+
+.relative:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.project-container {
+  padding-top: 20px; /* Adjust the value as needed */
+}
+
+.portfolio-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px; /* Updated border radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Updated shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+
+.portfolio-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease; /* Smooth image transition */
+}
+
+.portfolio-card .overlay {
+  border-radius: inherit;
+}
+
+.portfolio-card .card-details-button {
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 0 12px 12px; /* Match the card's rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.portfolio-card:hover .card-details-button {
+  display: block; /* Show on hover */
+}
+
+
+.card-details-button:hover {
+  background: rgba(0, 0, 0, 0.9); /* Darker shade on hover */
+}
+
+.details-button {
+  display: show; /* Hidden by default */
+}
+
+@media (max-width: 640px) {
+  .details-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      background-color: #4A90E2; /* Updated background color */
+      color: white;
+      border: none;
+      border-radius: 8px; /* Updated border radius */
+      cursor: pointer;
+      margin-top: 8px;
+      font-size: 1rem; /* Updated font size */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+  }
+
+  .details-button:hover {
+      background-color: #357ABD; /* Darker shade on hover */
+      transform: scale(1.02); /* Slight scaling effect on hover */
+  }
+}
+
+/* General Button Styles */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px; /* Consistent border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition */
+}
+
+button:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+button.bg-gradient-blue {
+  background: linear-gradient(to right, #4A90E2, #007AFF);
+  color: white;
+}
+
+button.bg-gradient-blue:hover {
+  background: linear-gradient(to right, #357ABD, #005BB5); /* Darker shade on hover */
+}
+
+button.bg-gradient-green {
+  background: linear-gradient(to right, #34C759, #28A745);
+  color: white;
+}
+
+button.bg-gradient-green:hover {
+  background: linear-gradient(to right, #1E9D39, #1B7A34); /* Darker shade on hover */
+}
+
+button.bg-gradient-github {
+  background: #333; /* GitHub dark gray */
+  color: white;
+}
+
+button.bg-gradient-github:hover {
+  background: #000; /* Slightly darker gray for hover effect */
+}
+
+/* Specific styles for icon buttons */
+button.bg-gradient-github .react-icons {
+  margin-right: 8px; /* Space between icon and text */
+}

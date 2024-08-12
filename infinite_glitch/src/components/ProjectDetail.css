@@ -1,0 +1,23 @@
+/* PortfolioDetail.css */
+
+/* Style links inside list items */
+.list-item-link {
+    color: #1e90ff; /* Link color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .list-item-link:hover {
+    color: #0066cc; /* Change color on hover */
+  }
+
+
+  @media (max-width: 768px) {
+    .back-button {
+      font-size: 14px;
+      padding: 8px;
+      margin-left: 0;
+    }
+  }
+  

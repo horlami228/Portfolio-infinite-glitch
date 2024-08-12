@@ -1,0 +1,23 @@
+.h1-tag-wrapper {
+    position: relative;
+    display: inline-block;
+    /* Optional: to give it a code-like appearance */
+  }
+  
+  .h1-tag-wrapper::before {
+    content: '<h1>';
+    position: absolute;
+    left: -60px; /* Adjust based on your layout */
+    top: 0;
+    color: gray; /* Color of the tag text */
+    font-size: 1rem; /* Size of the tag text */
+  }
+  
+  .h1-tag-wrapper::after {
+    content: '</h1>';
+    position: absolute;
+    right: -60px; /* Adjust based on your layout */
+    bottom: 0;
+    color: gray; /* Color of the tag text */
+    font-size: 1rem; /* Size of the tag text */
+  }
