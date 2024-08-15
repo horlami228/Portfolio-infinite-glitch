@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certifications from "./components/Certification";
 import ProjectDetail from "./components/ProjectDetail";
+import Blog from "./components/Blog";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Added import statement for BrowserRouter, Route, and Routes
 
 
@@ -26,6 +27,7 @@ function App() {
               <Experience />     {/* Professional experience */}
               <About />          {/* Background and personal info */}
               <Certifications />{/* Add credibility */}
+              <Blog />           {/* Share your thoughts */}
               <Contact />        {/* Contact details */}
               <Footer />         {/* Additional navigation and social links */}
               <Social />         {/* Optional: Ensure it's not distracting */}

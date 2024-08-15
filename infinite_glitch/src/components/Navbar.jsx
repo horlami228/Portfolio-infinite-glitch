@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'; // Import motion from Framer Motion
 // import { Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
+
 function Navbar() {
   const [nav, setNav] = useState(false);
 
@@ -35,6 +36,11 @@ function Navbar() {
     },
     {
       id: 6,
+      item: "blog",
+      link: "blog"
+    },
+    {
+      id: 7,
       item: "contact",
       link: "contact"
     }

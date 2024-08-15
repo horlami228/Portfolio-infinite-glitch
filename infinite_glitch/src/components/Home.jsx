@@ -71,17 +71,23 @@ function Home() {
 
   return (
     
-    <div name="home" className="min-h-screen w-full bg-white flex justify-center items-center px-4">
+    <div name="home" className="min-h-screen w-full bg-white flex justify-center items-center px-4 pt-16">
       
       <div className="flex flex-col md:flex-row items-center justify-center h-full max-w-screen-lg">
         <div className='flex flex-col justify-center items-center text-center h-full'>
           <h1 className="text-5xl md:text-6xl font-bold mb-5 md:mb-7 mt-12 md:mt-0">
             I'm Akintola Olamilekan
           </h1>
-          <h2 className="text-3xl md:text-4xl font-semibold">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+          Backend Developer specializing in creating secure and high-performing web applications
+          </h3>
+          <p className="text-gray-900 py-4 max-w-md text-lg md:text-xl">
+            I design efficient APIs, work with various frameworks, and ensure seamless frontend-backend communication.
+          </p>
+          <h3 className="text-2xl md:text-3xl font-semibold">
             <span ref={typedRef}></span>
-          </h2>
-          <p className="text-gray-800 py-4 max-w-md text-xl md:text-2xl">
+          </h3>
+          <p className="text-gray-900 py-4 max-w-md text-xl md:text-2xl">
             I'm dedicated to materializing digital ideas.
           </p>
           <motion.div
@@ -111,6 +117,54 @@ function Home() {
       </div>
     </div>
   )
+
+  // return (
+  //   <div name="home" className="min-h-screen w-full bg-white flex flex-col md:flex-row justify-center items-center px-4 py-12">
+  //     <div className="flex flex-col md:flex-row items-center justify-center h-full max-w-screen-lg space-y-8 md:space-y-0 md:space-x-10">
+  //       <div className='flex flex-col justify-center items-center text-center md:text-left'>
+  //         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
+  //           I'm Akintola Olamilekan
+  //         </h1>
+  //         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+  //           Backend Developer specializing in creating secure and high-performing web applications
+  //         </h2>
+  //         <p className="text-gray-700 py-4 max-w-md text-lg md:text-xl mb-6">
+  //           I design efficient APIs, work with various frameworks, and ensure seamless frontend-backend communication.
+  //         </p>
+  //         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+  //           <span ref={typedRef}></span>
+  //         </h2>
+  //         <p className="text-gray-700 py-4 max-w-md text-lg md:text-xl mb-8">
+  //           I'm dedicated to materializing digital ideas.
+  //         </p>
+  //         <motion.div
+  //           whileHover={{ scale: 1.05 }}
+  //           whileTap={{ scale: 0.95 }}
+  //           transition={{ duration: 0.3 }}
+  //         >
+  //           <Link
+  //             to="portfolio" // Link to the "portfolio" section
+  //             smooth={true}
+  //             duration={500}
+  //             offset={-70} // Adjust based on your header height
+  //             className="group flex justify-center items-center w-fit rounded-md bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-4 text-white font-medium cursor-pointer"
+  //           >
+  //             Portfolio
+  //             <span className="group-hover:rotate-90 duration-300 ml-2">
+  //               <IoIosArrowForward size={25} />
+  //             </span>
+  //           </Link>
+  //         </motion.div>
+  //       </div>
+  //       <div className="w-full max-w-xs md:max-w-md flex justify-center">
+  //         <img src={HeroPic} alt="Akintola Olamilekan" 
+  //           className="rounded-lg shadow-lg object-cover w-full h-auto" 
+  //           style={{ borderRadius: '15px' }}/>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
+
 }
 
 export default Home;
