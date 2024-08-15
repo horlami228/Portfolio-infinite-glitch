@@ -1,0 +1,66 @@
+/* General Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+  }
+  
+  .navbar-logo {
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .navbar-logo:hover,
+  .navbar-logo:focus {
+    color: #1d4ed8; /* Customize with your theme color */
+  }
+  
+  .navbar-desktop .navbar-item {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .navbar-desktop .navbar-item:hover,
+  .navbar-desktop .navbar-item:focus {
+    color: #1d4ed8; /* Customize with your theme color */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  .navbar-link {
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .navbar-link:hover,
+  .navbar-link:focus {
+    color: #1d4ed8; /* Customize with your theme color */
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Menu Styles */
+  .navbar-menu {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-menu.hidden {
+    transform: translateX(-100%);
+  }
+  
+  /* Mobile Toggle Styles */
+  .navbar-toggle {
+    transition: color 0.3s;
+  }
+  
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    color: #1d4ed8; /* Customize with your theme color */
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .navbar {
+      background-color: #1f2937; /* Dark background color */
+      color: #e5e7eb; /* Light text color */
+    }
+  
+    .navbar-link {
+      color: #e5e7eb;
+    }
+  }
+  

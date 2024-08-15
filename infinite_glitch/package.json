@@ -15,6 +15,7 @@
     "react-scroll": "^1.9.0",
     "react-transition-group": "^4.4.5",
     "react-typed": "^2.0.12",
+    "rss-parser": "^3.13.0",
     "three": "^0.167.1",
     "web-vitals": "^2.1.4"
   },
@@ -43,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.5"
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^3.3.5",
+    "timers-browserify": "^2.0.12"
   }
 }

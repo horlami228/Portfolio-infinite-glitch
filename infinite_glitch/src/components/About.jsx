@@ -13,24 +13,24 @@ function About() {
             </div>
 
             <p className="text-lg md:text-xl mt-10 md:mt-20">
-                Greetings! I'm Akintola Olamilekan, a Backend Developer with a background in Marketing but a heart deeply immersed in technology. My journey began with the intricacies of C, transitioning smoothly into the vast landscapes of Python and JavaScript.
+                Greetings! I'm Akintola Olamilekan, a Backend Developer with a unique journey that started in Marketing but quickly transitioned to the world of technology. Despite facing significant challenges, including limited access to resources, my passion for coding propelled me forward, driving me to learn and grow in the field of software development.
             </p>
 
             <p className='text-lg md:text-xl mt-8'>
-                With over 2+ years of experience, I specialize in crafting secure and high-performing web applications. I design efficient APIs to foster seamless frontend-backend communication and work proficiently with frameworks such as Flask, Django, and Express, as well as databases like MySQL, PostgreSQL, and MongoDB.
+                I specialize in crafting secure and high-performing web applications, focusing on designing efficient APIs that facilitate seamless frontend-backend communication. My technical toolkit includes frameworks such as Flask, Django, and Express, and databases like MySQL, PostgreSQL, and MongoDB.
             </p>
 
             <p className='text-lg md:text-xl mt-8'>
-                Recently, I've tackled projects involving data import and user management, achieving significant performance improvements. My role in collaborative projects often revolves around backend architecture, designing database schemas that ensure robust data integrity and optimized performance.
+                My journey hasn't been without obstacles, but each challenge has only strengthened my resolve to succeed. From tackling complex data import tasks to improving user management systems, I have always sought out opportunities to enhance performance and optimize systems.
             </p>
 
             <p className='text-lg md:text-xl mt-8'>
-                I am always eager to optimize and refine solutions, aiming to enhance scalability and efficiency. My professional and proactive approach has led to noticeable reductions in system latency and improved data handling.
+                What drives me is not just a love for technology, but a deep commitment to creating impactful solutions that make a difference. I am constantly pushing myself to refine my skills and deliver work that exceeds expectations, often achieving significant improvements in system efficiency and scalability.
             </p>
 
             <p className='text-lg md:text-xl mt-8'>
-                Away from the keyboard, I’m an avid supporter of Manchester United and relish diving into the expansive universes of video games. Thank you for exploring my profile. Let’s connect to discover how we can collaborate on exciting web projects and create meaningful solutions together!
-            </p>
+                Outside of tech, I’m a passionate Manchester United fan and love diving into books—whether it's the latest tech reads or just something that sparks my curiosity. My journey has been all about learning and growing through challenges, and I'm excited to connect with others who are equally enthusiastic about technology and making an impact. Let’s chat about how we can work together on exciting projects and create something amazing!
+            </p> 
             <div className="flex justify-center gap-4 mt-8">
                 <a href="https://www.linkedin.com/in/akintola-olamilekan" className="text-blue-600 hover:text-blue-800" target='_blank' rel='noreferrer'>
                     <FaLinkedinIn size={30} />
