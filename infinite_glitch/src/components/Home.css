@@ -21,3 +21,10 @@
     color: gray; /* Color of the tag text */
     font-size: 1rem; /* Size of the tag text */
   }
+
+
+@media (min-width: 1024px) {
+  .image-container {
+    margin-left: 210px; /* Adjust the value as needed */
+  }
+}
