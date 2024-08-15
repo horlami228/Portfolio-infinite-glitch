@@ -117,7 +117,7 @@ function Home() {
           style={{
             borderRadius: '50px',
             width: '135%',
-            maxWidth: isSmallScreen ? '100%' : '1000px',
+            maxWidth: isSmallScreen ? '100%' : '999px',
             height: 'auto'
           }}/>
         </div>
