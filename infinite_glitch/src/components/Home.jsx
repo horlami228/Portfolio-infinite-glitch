@@ -7,6 +7,8 @@ import { Typed } from 'react-typed';
 import './Home.css';
 
 function Home() {
+  const isSmallScreen = window.innerWidth < 768;
+
   const typedRef = useRef(null);
   const strings = [
     '🚀 Back-End Developer with a passion for innovation',
@@ -109,10 +111,15 @@ function Home() {
             </Link>
           </motion.div>
         </div>
-        <div className="mt-10 md:mt-0 md:ml-10 w-full max-w-xs md:max-w-sm flex justify-center">
+        <div className="image-container mt-10 md:mt-0 md:ml-10 w-full max-w-xs md:max-w-sm flex justify-center">
           <img src={HeroPic} alt="Akintola Olamilekan" 
           className="rounded-lg shadow-lg object-cover w-full h-auto" 
-          style={{ borderRadius: '50px' }}/>
+          style={{
+            borderRadius: '50px',
+            width: '135%',
+            maxWidth: isSmallScreen ? '100%' : '1000px',
+            height: 'auto'
+          }}/>
         </div>
       </div>
     </div>
