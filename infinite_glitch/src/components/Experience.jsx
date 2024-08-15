@@ -6,7 +6,7 @@ function Experience() {
       id: 1,
       company: "Shepherd's Field",
       role: "Backend Developer",
-      duration: "May 2024 - Present",
+      duration: "April 2024 - July 2024",
       technologies: [
         "JavaScript/TypeScript", 
         "Express.js", 
