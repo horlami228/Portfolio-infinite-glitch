@@ -8,12 +8,12 @@ function About() {
         <div className="flex flex-col justify-center mx-auto max-w-screen-lg p-5 md:p-10 w-full h-full">
             <div className="mb-5">
                 <p className='text-3xl md:text-4xl font-bold inline border-b-4 border-gray-600'>
-                    About
+                    About Me
                 </p>
             </div>
 
             <p className="text-lg md:text-xl mt-10 md:mt-20">
-                Greetings! I'm Akintola Olamilekan, a Backend Developer with a unique journey that started in Marketing but quickly transitioned to the world of technology. Despite facing significant challenges, including limited access to resources, my passion for coding propelled me forward, driving me to learn and grow in the field of software development.
+                Greetings! I'm Akintola Olamilekan, A Backend Developer with a unique journey that started in Marketing but quickly transitioned to the world of technology. Despite facing significant challenges, including limited access to resources, my passion for coding propelled me forward, driving me to learn and grow in the field of software development.
             </p>
 
             <p className='text-lg md:text-xl mt-8'>

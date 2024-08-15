@@ -17,12 +17,6 @@ function Certifications() {
     },
     {
       id: 3,
-      title: "Certified Backend Developer",
-      issuer: "Meta Coursera",
-      description: "Certification that validates proficiency in backend development, including server-side scripting, database management, and API design."
-    },
-    {
-      id: 4,
       title: "HNG Internship Certificate",
       issuer: "HNG Internship",
       description: "Certificate of completion for the HNG Internship program up to stage 5, which focused on real-world software development practices.",
